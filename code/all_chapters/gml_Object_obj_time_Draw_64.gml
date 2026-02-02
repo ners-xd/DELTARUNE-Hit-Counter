@@ -30,7 +30,8 @@ if (global.reset_key >= 0)
 }
 else
 {
-    draw_set_color(c_yellow);
+    if (global.hits == 0) draw_set_color(c_yellow);
+    else draw_set_color(c_white);
     draw_text_outline(5, surface_get_height(application_surface) - 30, "Hits: " + string(global.hits));
 }
 

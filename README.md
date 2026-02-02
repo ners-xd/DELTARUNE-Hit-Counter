@@ -1,8 +1,6 @@
 # DELTARUNE Hit Counter Mod
-<b>NOTE</b>: The supported game versions are:
-- Windows Chapters 1-4 v1.04 (CH1 1.40 / CH2 1.46 / CH3 v0.0.098 / CH4 v0.0.098)
-- Windows Chapters 1-4 v1.05 Beta (CH1 1.41 / CH2 1.47 / CH3 v0.0.099 / CH4 v0.0.100)
-- Switch Chapters 1-4 v1.04 (CH1 1.28 / CH2 1.34 / CH3 v0.0.095 / CH4 v0.0.096).
+<b>NOTE</b>: This mod is only supported on the Windows 1-4 v1.05 Beta game version (CH1 1.41 / CH2 1.47 / CH3 v0.0.099 / CH4 v0.0.100).
+To install this version, go to the game on Steam, click on <b>Properties</b>, go to the <b>Betas</b> tab, and choose <b>deltarune105</b>.
 
 This mod counts the amount of hits that the player takes. The count is global, meaning it isn't affected by switching chapters or reloading a file.  
 
@@ -18,16 +16,21 @@ A hit counts as an avoidable loss of HP in battle or in the overworld, including
     - Taking damage to Balthizard's clouds that only come up when at least one other enemy is in the battle.
 
 # How to install and use
+- Download [the latest](https://github.com/marti005/DELTARUNE-Hit-Counter/releases/latest) version of the mod
+- **Extract the archive anywhere**, run "Hit Counter Patcher.bat" and follow its instructions.
+- A counter will appear on the bottom left corner. This number is stored in "hits.json" in the game save folder.
+- To reset the counter, hold down R for 2 seconds. 
 
 # Contributing
 How to contribute to the mod:
 - Create a fork of the repo and download the files
 - Download [the latest](https://github.com/nhaar/ump/releases/latest) version of UMP and place the script in the same folder as the mod
 - Use [the latest](https://github.com/underminersteam/undertalemodtool/releases/latest) version of UndertaleModTool
-- Open a chapter's data.win, click on Scripts -> Run other script... -> bingosync_script.csx to import the mod and you can save the file
+- Open a chapter's data.win, click on Scripts -> Run other script... -> hit_counter_script.csx to import the mod and you can save the file
 - You can find a guide on how to use UMP [here](https://github.com/nhaar/ump/blob/main/guide/guide.md)
 - If you've made some modifications and you want them to be added in the mod, open a Pull Request and we'll look at it.
 
 # Credits
-- Coding: marti005, NERS 
+- Coding: marti005
+- Additional coding & technical help: NERS 
 - UMP: nhaar.
