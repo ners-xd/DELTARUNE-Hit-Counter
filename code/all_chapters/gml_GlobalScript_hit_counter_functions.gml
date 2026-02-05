@@ -2,7 +2,7 @@
 
 function scr_get_mod_version()
 {
-    return "1.01";
+    return "1.02";
 }
 
 function scr_setup_hit_counter()
@@ -101,6 +101,9 @@ function scr_add_hit()
     }
     else if (room != room_dw_mansion_b_west_2f)
 #elsif CHAPTER_3
+    if (instance_exists(obj_tenna_enemy) && instance_exists(obj_elnina_umbrella) && !obj_tenna_enemy.minigameinsanitydamage)
+        exit;
+
     if (instance_exists(obj_knight_enemy) && instance_exists(obj_sword_tunnel_manager) && obj_sword_tunnel_manager.con == 0 && !global.knight_swords_hit)
     {
         global.knight_swords_hit = true;
