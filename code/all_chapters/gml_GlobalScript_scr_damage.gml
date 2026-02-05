@@ -13,25 +13,11 @@ if (singletarget)
     scr_add_hit();
 /// END
 
-#if CHAPTER_3
-/// AFTER
-obj_tenna_enemy.minigamefailcount++;
-/// CODE
-global.hits--;
-scr_save_hits();
-/// END
-
-#elsif CHAPTER_4
+#if CHAPTER_4
 /// BEFORE
 scr_damage_cache();
 /// CODE
 if (instance_exists(obj_ch4_DCA01) && global.interact == 0)
-{
-    global.hits--;
-    scr_save_hits();
-}
-
-if (instance_exists(obj_dw_churchc_darkswords) && (obj_dw_churchc_darkswords.con < 2 || global.forcedswords))
 {
     global.hits--;
     scr_save_hits();
